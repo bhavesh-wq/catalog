@@ -1,0 +1,1234 @@
+/* === EZ-FLO Product Catalog 2026 - Shared Styles === */
+/* TYPE: Inter Tight Bold (700) headings, Medium (500) subheadings/labels, Regular (400) body */
+/* SCALE: 56 / 36 / 24 / 21 / 19 / 18 / 16 / 14 / 13 / 11 (restored) */
+/* IMAGES: 4:5 ratio, 176×220 */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700&display=swap');
+
+@page {
+  size: 8.75in 11.25in;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  font-family: 'Inter Tight', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+@media print {
+  body {
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+  .page {
+    box-shadow: none;
+  }
+}
+
+/* ============================================================
+   PAGE
+   ============================================================ */
+.page {
+  width: 8.75in;
+  height: 11.25in;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* === PAGE LEAF DECORATIONS === */
+.page-leaf {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 50;
+}
+.page-leaf-1 {
+  bottom: 70px;
+  right: 10px;
+}
+.page-leaf-2 {
+  top: 32px;
+  left: 10px;
+}
+
+/* === TRIM MARKS === */
+.page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  pointer-events: none;
+  background:
+    linear-gradient(#000, #000) left 0 top 0.125in / 0.1in 0.3px no-repeat,
+    linear-gradient(#000, #000) left 0.125in top 0 / 0.3px 0.1in no-repeat,
+    linear-gradient(#000, #000) right 0 top 0.125in / 0.1in 0.3px no-repeat,
+    linear-gradient(#000, #000) right 0.125in top 0 / 0.3px 0.1in no-repeat,
+    linear-gradient(#000, #000) left 0 bottom 0.125in / 0.1in 0.3px no-repeat,
+    linear-gradient(#000, #000) left 0.125in bottom 0 / 0.3px 0.1in no-repeat,
+    linear-gradient(#000, #000) right 0 bottom 0.125in / 0.1in 0.3px no-repeat,
+    linear-gradient(#000, #000) right 0.125in bottom 0 / 0.3px 0.1in no-repeat;
+}
+
+/* ============================================================
+   HEADER BAR
+   ============================================================ */
+.header {
+  width: 100%;
+  height: 94px;
+  background: #1c476c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 52px 0 52px;
+}
+
+.header-logo img {
+  height: 36px;
+  width: auto;
+}
+
+.header-section-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 1.35;
+}
+
+.header-section-label span {
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* ============================================================
+   FOOTER BAR
+   ============================================================ */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 58px;
+  background: #1c476c;
+  display: flex;
+  align-items: center;
+  padding: 0 52px 9px 52px;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-page {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.footer-info {
+  color: rgba(255,255,255,0.85);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.footer-contact {
+  color: rgba(255,255,255,0.85);
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  gap: 16px;
+  letter-spacing: 0.3px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-website {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+
+.footer-version {
+  color: rgba(255,255,255,0.5);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* ============================================================
+   CONTENT AREA
+   ============================================================ */
+.content {
+  position: absolute;
+  top: 126px;      /* header 94px + 32px gap */
+  bottom: 90px;    /* footer 58px + 32px gap */
+  left: 52px;
+  right: 52px;
+}
+
+.content > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Extra space between intro text and first product card */
+.content > p + .fert-product,
+.content > p + .sys-product {
+  margin-top: 32px;
+}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+/* Display — 35px Bold */
+.display-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1c476c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.15;
+}
+
+/* H1 — 35px Bold */
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1c476c;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.green-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1A9978;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* H2 — 23px Medium */
+.green-title-sm {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A9978;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+/* Subtitle — 15px Regular */
+.section-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+/* ============================================================
+   SYSTEM PRODUCT COMPONENT
+   DOM: prod-info first, prod-img second
+   img-right = default (image naturally on right)
+   img-left  = row-reverse (image flips to left)
+   ============================================================ */
+.sys-product {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.sys-product.img-left {
+  flex-direction: row-reverse;
+}
+
+/* ============================================================
+   FERTILIZER PRODUCT COMPONENT
+   DOM: prod-img first, prod-info second
+   img-left  = default (image naturally on left)
+   img-right = row-reverse (image flips to right)
+   ============================================================ */
+.fert-product {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.fert-product.img-right {
+  flex-direction: row-reverse;
+}
+
+/* ============================================================
+   SHARED PRODUCT CHILDREN
+   ============================================================ */
+.prod-info {
+  flex: 1 1 0;
+  min-width: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.prod-img {
+  width: 260px;
+  height: 260px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.prod-img img {
+  width: 338px;
+  height: 338px;
+  max-width: none;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+
+/* System: center-align image to text */
+.sys-product {
+  align-items: center;
+}
+
+/* Fertilizer: center-aligned */
+.fert-product {
+  align-items: center;
+}
+
+/* SKU — bold label + lighter value */
+.sku,
+.product-sku {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.sku strong,
+.product-sku strong {
+  color: #333;
+  font-weight: 700;
+}
+
+/* ============================================================
+   SPEC TABLE — 14px Medium labels / 14px Regular values
+   ============================================================ */
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.spec-table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.spec-table td {
+  padding: 5px 0;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+}
+
+.spec-table td:first-child {
+  font-weight: 500;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  padding-right: 128px;
+  white-space: nowrap;
+}
+
+.spec-table td:last-child {
+  font-weight: 400;
+  color: #555;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: left;
+}
+
+.spec-table.wide-label td:first-child {
+  padding-right: 180px;
+}
+
+.green-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #1A9978;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.diff-heading {
+  margin-top: 36px;
+  margin-bottom: 8px;
+}
+
+/* ============================================================
+   COMPARISON / DIFF TABLE
+   ============================================================ */
+.diff-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.diff-table thead tr {
+  border-bottom: none;
+}
+
+.diff-table th {
+  padding: 8px 6px;
+  text-align: left;
+  font-weight: 600;
+  color: #fff;
+  background: #1c476c;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+
+.diff-table th:first-child {
+  width: 140px;
+  padding-left: 8px;
+}
+
+.diff-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.diff-table tbody tr:nth-child(even) {
+  background: #f5f8f0;
+}
+
+.diff-table td {
+  padding: 5px 6px;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.diff-table td:first-child {
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.3px;
+  padding-left: 0;
+}
+
+.diff-table .sku-row td {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+/* ============================================================
+   DIVIDER
+   ============================================================ */
+.divider,
+hr.divider {
+  display: none;
+}
+
+/* ============================================================
+   BULLET LISTS — 14px Regular
+   ============================================================ */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 10px 0;
+}
+
+.feature-list li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+  padding: 3px 0 3px 16px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.feature-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  background: #1A9978;
+  border-radius: 50%;
+}
+
+/* ============================================================
+   QR CODE PLACEHOLDER
+   ============================================================ */
+.qr-placeholder {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+  text-align: center;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.qr-section {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+/* ============================================================
+   LEAF DECORATIONS
+   ============================================================ */
+.leaf-top-left {
+  position: absolute;
+  top: 90px;
+  left: 4px;
+  width: 55px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.leaf-bottom-right {
+  position: absolute;
+  bottom: 62px;
+  right: 5px;
+  width: 50px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ============================================================
+   CAPABILITIES TABLE
+   ============================================================ */
+.cap-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.cap-table th {
+  padding: 6px 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  letter-spacing: 0.3px;
+}
+
+.cap-table th:first-child {
+  text-align: left;
+  width: 200px;
+}
+
+.cap-table td {
+  padding: 6px 6px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+.cap-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: #333;
+}
+
+.cap-table .check {
+  color: #1A9978;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.cap-table .cross {
+  color: #cc3333;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* ============================================================
+   QUICK REFERENCE TABLE
+   ============================================================ */
+.ref-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.ref-table th {
+  padding: 5px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: #1A9978;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.3px;
+}
+
+.ref-table td {
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+.ref-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.ref-table .cat-header td {
+  font-weight: 500;
+  color: #1c476c;
+  background: #e8f0e0;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px 8px;
+  letter-spacing: 0.3px;
+}
+
+/* ============================================================
+   FERTILIZER TEXT STYLES (inside .prod-info)
+   ============================================================ */
+.fert-product .prod-info p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.55;
+  margin-bottom: 6px;
+}
+
+.fert-product .prod-info .sku {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.fert-product .prod-info .coverage {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A9978;
+  text-transform: uppercase;
+}
+
+/* All ul inside content/page-content/prod-info — green round bullets */
+.content ul,
+.page-content ul,
+.prod-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 10px 0;
+}
+
+.content > ul li,
+.page-content > ul li {
+  font-size: 14px;
+}
+
+.prod-info ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+  padding: 2px 0 2px 16px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.content ul li::before,
+.page-content ul li::before,
+.prod-info ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  background: #1A9978;
+  border-radius: 50%;
+}
+
+/* Coverage rate (unclassed) */
+.coverage-rate {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 6px;
+}
+
+/* ============================================================
+   HERO / COVER
+   ============================================================ */
+.cover-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.cover-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(28,71,108,0.7) 0%, rgba(28,71,108,0.3) 40%, rgba(0,0,0,0.1) 100%);
+}
+
+.cover-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 56px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cover-logo img {
+  height: 70px;
+  width: auto;
+}
+
+.cover-title {
+  margin-top: auto;
+  margin-bottom: 80px;
+}
+
+.cover-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.1;
+}
+
+.cover-title p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.85);
+  margin-top: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   ABOUT / INTRO PAGE
+   ============================================================ */
+.intro-hero {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.intro-content {
+  padding: 32px 52px;
+}
+
+.intro-content h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.intro-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1c476c;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.intro-content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+/* ============================================================
+   TABLE OF CONTENTS
+   ============================================================ */
+.toc-content {
+  padding: 50px 60px;
+}
+
+.toc-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1c476c;
+  margin-bottom: 26px;
+}
+
+.toc-section-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1A9978;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
+.toc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.toc-item:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.toc-item span:last-child {
+  color: #888;
+  font-weight: 500;
+}
+
+/* ============================================================
+   TWO COLUMN LAYOUT
+   ============================================================ */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.two-col .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.two-col .col .feature-box:last-child {
+  flex: 1;
+}
+
+/* ============================================================
+   FEATURE BOXES
+   ============================================================ */
+.feature-box {
+  background: #1A9978;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.feature-box h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.feature-box p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.95);
+  line-height: 1.6;
+}
+
+.feature-box ul {
+  margin: 0;
+  padding-left: 18px;
+  list-style-type: disc;
+}
+
+.feature-box ul li {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.95);
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+/* ============================================================
+   STEP CARDS (page 6)
+   ============================================================ */
+.step-cards {
+  display: flex;
+  gap: 14px;
+}
+
+.step-card {
+  flex: 1;
+  background: #1A9978;
+  border-radius: 10px;
+  padding: 16px 12px 18px;
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  width: 28px;
+  height: 28px;
+  background: #1A9978;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.step-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 30px;
+}
+
+.step-text {
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================================
+   GREEN BANNER
+   ============================================================ */
+.green-banner {
+  background: linear-gradient(135deg, #1A9978, #147a60);
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+/* ============================================================
+   SIZING TABLE
+   ============================================================ */
+.sizing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.sizing-table th:first-child,
+.sizing-table td:first-child {
+  width: 18%;
+}
+
+.sizing-table th {
+  padding: 5px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: #1c476c;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.3px;
+}
+
+.sizing-table td {
+  padding: 5px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+.sizing-table tr:nth-child(even) {
+  background: #f5f8f0;
+}
+
+.sizing-table tr:hover {
+  background: #e8f0e0;
+}
+
+/* ============================================================
+   LINK STYLE
+   ============================================================ */
+.visit-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A9978;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+/* ============================================================
+   FULL PAGE IMAGE (section intros)
+   ============================================================ */
+.full-img-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.full-img-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.full-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+.full-img-content {
+  position: absolute;
+  bottom: 90px;
+  left: 56px;
+  right: 56px;
+  z-index: 2;
+}
+
+.full-img-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.full-img-content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   DIAGRAM IMAGE
+   ============================================================ */
+.diagram-image img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* ============================================================
+   COVERAGE (feature tags)
+   ============================================================ */
+.coverage {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A9978;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+/* Disclaimer footnote */
+.disclaimer {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  font-style: italic;
+  margin-top: 16px;
+}
+
+/* Compact text — 5% smaller for dense pages */
+.compact-text .content {
+  font-size: 95%;
+}
+.compact-text .green-title-sm {
+  font-size: 16px;
+}
+.compact-text .spec-table td {
+  font-size: 14px;
+  padding: 4px 8px;
+}
+.compact-text .sku {
+  font-size: 14px;
+}
+
+/* page-content alias */
+.page-content {
+  padding: 28px 52px 0 52px;
+}
+
+.page-content > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* ============================================================
+   UTILITY
+   ============================================================ */
+.text-body { font-size: 14px; font-weight: 400; color: #444; line-height: 1.7; }
+.text-small { font-size: 14px; font-weight: 400; color: #888; }
+.text-bold { font-weight: 500; color: #333; }
+.text-green { color: #1A9978; }
+.text-muted { color: #999; font-weight: 400; }
+.mb-4 { margin-bottom: 6px; }
+.mb-8 { margin-bottom: 12px; }
+.mb-12 { margin-bottom: 18px; }
+.mb-16 { margin-bottom: 24px; }
+.mb-20 { margin-bottom: 32px; }
+.mb-24 { margin-bottom: 34px; }
+.mb-32 { margin-bottom: 44px; }
+
+/* ============================================================
+   STEP CARDS (4-step instruction row)
+   ============================================================ */
+.step-cards {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0 28px 0;
+}
+
+.step-card {
+  flex: 1;
+  background: #1A9978;
+  border-radius: 10px;
+  padding: 14px 10px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.step-card .step-num {
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  color: #1c476c;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px auto;
+}
+
+.step-card .step-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.step-card .step-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.step-card .step-label {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+}
