@@ -666,7 +666,7 @@ hr.divider {
 /* ============================================================
    FERTILIZER TEXT STYLES (inside .prod-info)
    ============================================================ */
-.fert-product .prod-info p {
+.fert-product .prod-info p:not(.prod-subtitle) {
   font-size: 14px;
   font-weight: 400;
   color: #444;
@@ -674,11 +674,27 @@ hr.divider {
   margin-bottom: 6px;
 }
 
-.fert-product .prod-info .sku {
-  font-size: 14px;
-  font-weight: 500;
-  color: #999;
-  margin-bottom: 6px;
+.prod-subtitle,
+.fert-product .prod-info .prod-subtitle,
+.compact-text .prod-subtitle {
+  font-size: 12px !important;
+  color: #666 !important;
+  font-weight: 400 !important;
+  margin-top: 2px !important;
+  margin-bottom: 4px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.green-title-sm,
+.fert-product .prod-info .green-title-sm,
+.compact-text .green-title-sm {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #1A9978 !important;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 0 !important;
 }
 
 .fert-product .prod-info .coverage {
@@ -849,6 +865,18 @@ hr.divider {
   font-weight: 700;
   color: #1c476c;
   margin-bottom: 26px;
+}
+
+.toc-page .page-leaf-2 {
+  top: 44px;
+  left: auto;
+  right: 50px;
+}
+
+.toc-page .page-leaf-1 {
+  bottom: 58px;
+  right: auto;
+  left: 20px;
 }
 
 .toc-section-title {
@@ -1134,9 +1162,6 @@ hr.divider {
 .compact-text .content {
   font-size: 95%;
 }
-.compact-text .green-title-sm {
-  font-size: 16px;
-}
 .compact-text .spec-table td {
   font-size: 14px;
   padding: 4px 8px;
@@ -1375,7 +1400,7 @@ hr.divider {
 
 </div>
 
-<div class="page">
+<div class="page toc-page">
   <img class="page-leaf page-leaf-1" src="../mockup/leaf 2.png" alt="">
   <img class="page-leaf page-leaf-2" src="../mockup/leaf 1.png" alt="">
   <div class="toc-content">
@@ -1392,8 +1417,9 @@ hr.divider {
     <div class="toc-item"><span>High Capacity Systems</span><span>12</span></div>
 
     <div class="toc-section-title">III. Parts &amp; Accessories</div>
-    <div class="toc-item"><span>Connectors</span><span>15</span></div>
-    <div class="toc-item"><span>Accessories</span><span>16</span></div>
+    <div class="toc-item"><span>Parts &amp; Accessories</span><span>15</span></div>
+    <div class="toc-item"><span>Connectors</span><span>16</span></div>
+    <div class="toc-item"><span>Accessories</span><span>17</span></div>
 
     <div class="toc-section-title">IV. Fertilizers &amp; Supplements</div>
     <div class="toc-item"><span>Premium Fill Kit</span><span>18</span></div>
@@ -1415,7 +1441,7 @@ hr.divider {
     <div class="footer-right">
       <div class="footer-contact">
         <span>Phone (866) 393-5601</span>
-        <span>Fax (916) 652-5754</span>
+
       </div>
       <a href="#" class="footer-website">www.ezfloinjection.com</a>
       <span class="footer-version">v26.1</span>
@@ -1461,7 +1487,7 @@ hr.divider {
     <div class="footer-right">
       <div class="footer-contact">
         <span>Phone (866) 393-5601</span>
-        <span>Fax (916) 652-5754</span>
+
       </div>
       <a href="#" class="footer-website">www.ezfloinjection.com</a>
       <span class="footer-version">v26.1</span>
@@ -1520,6 +1546,7 @@ hr.divider {
           <h4>User Friendly</h4>
           <ul>
             <li>EZ-FLO is designed to be so easy so anyone can maintain their landscape like a pro.</li>
+            <li>Works with your existing irrigation system, no special tools or professional installation required.</li>
           </ul>
         </div>
       </div>
@@ -1535,7 +1562,7 @@ hr.divider {
     <div class="footer-right">
       <div class="footer-contact">
         <span>Phone (866) 393-5601</span>
-        <span>Fax (916) 652-5754</span>
+
       </div>
       <a href="#" class="footer-website">www.ezfloinjection.com</a>
       <span class="footer-version">v26.1</span>
@@ -1562,16 +1589,16 @@ hr.divider {
       </p>
 
       <div class="step-cards" style="margin-top: 32px;">
-        <div class="step-card" style="aspect-ratio: 4/5.2; padding: 20px 0; overflow: hidden;">
+        <div class="step-card" style="aspect-ratio: 4/5.2; padding: 20px 0; overflow: hidden; background: #25b08a;">
           <img src="../mockup/asset-20.svg" alt="Step 1" style="width: 100%; height: 100%; object-fit: contain; display: block;">
         </div>
-        <div class="step-card" style="aspect-ratio: 4/5.2; padding: 20px 0; overflow: hidden;">
+        <div class="step-card" style="aspect-ratio: 4/5.2; padding: 20px 0; overflow: hidden; background: #25b08a;">
           <img src="../mockup/asset-21.svg" alt="Step 2" style="width: 100%; height: 100%; object-fit: contain; display: block;">
         </div>
-        <div class="step-card" style="aspect-ratio: 4/5.2; padding: 20px 0; overflow: hidden;">
+        <div class="step-card" style="aspect-ratio: 4/5.2; padding: 20px 0; overflow: hidden; background: #25b08a;">
           <img src="../mockup/asset-22.svg" alt="Step 3" style="width: 100%; height: 100%; object-fit: contain; display: block;">
         </div>
-        <div class="step-card" style="aspect-ratio: 4/5.2; padding: 20px 0; overflow: hidden;">
+        <div class="step-card" style="aspect-ratio: 4/5.2; padding: 20px 0; overflow: hidden; background: #25b08a;">
           <img src="../mockup/asset-23.svg" alt="Step 4" style="width: 100%; height: 100%; object-fit: contain; display: block;">
         </div>
       </div>
@@ -1606,7 +1633,7 @@ hr.divider {
       <div class="footer-right">
         <div class="footer-contact">
           <span>Phone (866) 393-5601</span>
-          <span>Fax (916) 652-5754</span>
+  
         </div>
         <a href="#" class="footer-website">www.ezfloinjection.com</a>
         <span class="footer-version">v26.1</span>
@@ -1740,7 +1767,7 @@ hr.divider {
       <div class="footer-right">
         <div class="footer-contact">
           <span>Phone (866) 393-5601</span>
-          <span>Fax (916) 652-5754</span>
+  
         </div>
         <a href="#" class="footer-website">www.ezfloinjection.com</a>
         <span class="footer-version">v26.1</span>
@@ -1788,8 +1815,8 @@ hr.divider {
           <img src="../mockup/Photoroom (14)/EZ-FLO_2005-HB_flow_front_Square_V1-Photoroom-Photoroom-Photoroom.png" alt="EZ-FLO Hose Bib 0.75 GAL" style="width: 260px; height: 260px;">
         </div>
         <div class="prod-info">
-          <h3 class="green-title-sm">EZ-FLO HOSE BIB 0.75 GAL.</h3>
-          <p class="sku"><strong>SKU:</strong> EZ 2005-HB</p>
+          <h3 class="green-title-sm">EZ 2005-HB</h3>
+          <p class="prod-subtitle">EZ-FLO HOSE BIB 0.75 GAL.</p>
           <table class="spec-table">
             <tr><td>Fill Capacity</td><td>Up to 0.75 GAL or 5 LBS</td></tr>
             <tr><td>Dimensions</td><td>7" x 7" x 10"</td></tr>
@@ -1810,7 +1837,7 @@ hr.divider {
       <div class="footer-right">
         <div class="footer-contact">
           <span>Phone (866) 393-5601</span>
-          <span>Fax (916) 652-5754</span>
+  
         </div>
         <a href="#" class="footer-website">www.ezfloinjection.com</a>
         <span class="footer-version">v26.1</span>
@@ -1835,8 +1862,8 @@ hr.divider {
           <img src="../mockup/Photoroom (14)/EZ-FLO_1010-HB_flow_front_Square_V1-Photoroom-Photoroom-Photoroom.png" alt="EZ-FLO Hose Bib 1 GAL" style="width: 260px; height: 260px;">
         </div>
         <div class="prod-info">
-          <h3 class="green-title-sm">EZ-FLO HOSE BIB 1 GAL.</h3>
-          <p class="sku"><strong>SKU:</strong> EZ 1010-HB</p>
+          <h3 class="green-title-sm">EZ 1010-HB</h3>
+          <p class="prod-subtitle">EZ-FLO HOSE BIB 1 GAL.</p>
           <table class="spec-table">
             <tr><td>Fill Capacity</td><td>Up to 1 GAL or 8 LBS</td></tr>
             <tr><td>Dimensions</td><td>7" x 7" x 15"</td></tr>
@@ -1850,8 +1877,8 @@ hr.divider {
 
       <div class="sys-product img-right">
         <div class="prod-info">
-          <h3 class="green-title-sm">EZ-FLO HOSE BIB 2.5 GAL.</h3>
-          <p class="sku"><strong>SKU:</strong> EZ 2020-HB</p>
+          <h3 class="green-title-sm">EZ 2020-HB</h3>
+          <p class="prod-subtitle">EZ-FLO HOSE BIB 2.5 GAL.</p>
           <table class="spec-table">
             <tr><td>Fill Capacity</td><td>Up to 2.5 GAL or 10 LBS</td></tr>
             <tr><td>Dimensions</td><td>10" x 10" x 16"</td></tr>
@@ -1896,7 +1923,7 @@ hr.divider {
       <div class="footer-right">
         <div class="footer-contact">
           <span>Phone (866) 393-5601</span>
-          <span>Fax (916) 652-5754</span>
+  
         </div>
         <a href="#" class="footer-website">www.ezfloinjection.com</a>
         <span class="footer-version">v26.1</span>
@@ -1923,26 +1950,26 @@ hr.divider {
       <div class="step-cards">
         <div class="step-card">
           <div class="step-num">1</div>
-          <div class="step-img" style="aspect-ratio: 4/5; background: transparent;"><img src="../mockup/Photoroom (14)/010401.svg" alt="Step 1"></div>
+          <div class="step-img" style="aspect-ratio: 4/5; background: transparent;"><img src="../mockup/Photoroom (14)/untitled folder 2/010401.png" alt="Step 1"></div>
         </div>
         <div class="step-card">
           <div class="step-num">2</div>
-          <div class="step-img" style="aspect-ratio: 4/5; background: transparent;"><img src="../mockup/Photoroom (14)/020302.svg" alt="Step 2"></div>
+          <div class="step-img" style="aspect-ratio: 4/5; background: transparent;"><img src="../mockup/Photoroom (14)/untitled folder 2/020302.png" alt="Step 2"></div>
         </div>
         <div class="step-card">
           <div class="step-num">3</div>
-          <div class="step-img" style="aspect-ratio: 4/5; background: transparent;"><img src="../mockup/Photoroom (14)/030203.svg" alt="Step 3"></div>
+          <div class="step-img" style="aspect-ratio: 4/5; background: transparent;"><img src="../mockup/Photoroom (14)/untitled folder 2/030203.png" alt="Step 3"></div>
         </div>
         <div class="step-card">
           <div class="step-num">4</div>
-          <div class="step-img" style="aspect-ratio: 4/5; background: transparent;"><img src="../mockup/Photoroom (14)/040104.svg" alt="Step 4"></div>
+          <div class="step-img" style="aspect-ratio: 4/5; background: transparent;"><img src="../mockup/Photoroom (14)/untitled folder 2/040104.png" alt="Step 4"></div>
         </div>
       </div>
 
       <div class="sys-product img-right" style="margin-top: 16px;">
         <div class="prod-info">
-          <h3 class="green-title-sm">EZKIT 1.75 GAL.</h3>
-          <p class="sku"><strong>SKU:</strong> EZKIT-1</p>
+          <h3 class="green-title-sm">EZKIT-1</h3>
+          <p class="prod-subtitle">EZKIT 1.75 GAL.</p>
           <table class="spec-table">
             <tr><td>Fill Capacity</td><td>Up to 1.75 GAL or 17.5 LBS</td></tr>
             <tr><td>Dimensions</td><td>14" x 10" x 11"</td></tr>
@@ -1968,7 +1995,7 @@ hr.divider {
       <div class="footer-right">
         <div class="footer-contact">
           <span>Phone (866) 393-5601</span>
-          <span>Fax (916) 652-5754</span>
+  
         </div>
         <a href="#" class="footer-website">www.ezfloinjection.com</a>
         <span class="footer-version">v26.1</span>
@@ -1990,8 +2017,8 @@ hr.divider {
 
       <div class="sys-product img-left">
         <div class="prod-info">
-          <h3 class="green-title-sm">EZKIT 2.5 GAL.</h3>
-          <p class="sku"><strong>SKU:</strong> EZKIT-3</p>
+          <h3 class="green-title-sm">EZKIT-3</h3>
+          <p class="prod-subtitle">EZKIT 2.5 GAL.</p>
           <table class="spec-table">
             <tr><td>Fill Capacity</td><td>Up to 2.5 GAL or 25 LBS</td></tr>
             <tr><td>Dimensions</td><td>22" x 10" x 11"</td></tr>
@@ -2039,7 +2066,7 @@ hr.divider {
       <div class="footer-right">
         <div class="footer-contact">
           <span>Phone (866) 393-5601</span>
-          <span>Fax (916) 652-5754</span>
+  
         </div>
         <a href="#" class="footer-website">www.ezfloinjection.com</a>
         <span class="footer-version">v26.1</span>
@@ -2063,8 +2090,8 @@ hr.divider {
 
         <div class="sys-product img-right" style="margin-bottom: 32px;">
           <div class="prod-info">
-            <h3 class="green-title-sm">EZ-FLO MAINLINE 4.5 GAL.</h3>
-            <p class="sku"><strong>SKU:</strong> EZ005-HC</p>
+            <h3 class="green-title-sm">EZ005-HC</h3>
+            <p class="prod-subtitle">EZ-FLO MAINLINE 4.5 GAL.</p>
             <table class="spec-table">
               <tr><td>Fill Capacity</td><td>Up to 4.5 GAL or 30 LBS</td></tr>
               <tr><td>Dimensions</td><td>24" x 10" x 13"</td></tr>
@@ -2083,8 +2110,8 @@ hr.divider {
 
         <div class="sys-product img-left" style="margin-bottom: 32px;">
           <div class="prod-info">
-            <h3 class="green-title-sm">EZ-FLO MAINLINE 7.5 GAL.</h3>
-            <p class="sku"><strong>SKU:</strong> EZ007-HC</p>
+            <h3 class="green-title-sm">EZ007-HC</h3>
+            <p class="prod-subtitle">EZ-FLO MAINLINE 7.5 GAL.</p>
             <table class="spec-table">
               <tr><td>Fill Capacity</td><td>Up to 7.5 GAL or 75 LBS</td></tr>
               <tr><td>Dimensions</td><td>27" x 12" x 14"</td></tr>
@@ -2097,14 +2124,14 @@ hr.divider {
             </table>
           </div>
           <div class="prod-img">
-            <img src="../mockup/Photoroom (14)/EZ005-HC-Photoroom.png" alt="EZ-FLO Mainline 7.5 GAL">
+            <img src="../mockup/Photoroom (14)/EZ007-HC-Photoroom.png" alt="EZ-FLO Mainline 7.5 GAL">
           </div>
         </div>
 
         <div class="sys-product img-right" style="margin-bottom: 32px;">
           <div class="prod-info">
-            <h3 class="green-title-sm">EZ-FLO MAINLINE 10 GAL.</h3>
-            <p class="sku"><strong>SKU:</strong> EZ010-HC</p>
+            <h3 class="green-title-sm">EZ010-HC</h3>
+            <p class="prod-subtitle">EZ-FLO MAINLINE 10 GAL.</p>
             <table class="spec-table">
               <tr><td>Fill Capacity</td><td>Up to 10 GAL or 75 LBS</td></tr>
               <tr><td>Dimensions</td><td>30" x 12" x 16"</td></tr>
@@ -2131,7 +2158,7 @@ hr.divider {
       <div class="footer-right">
         <div class="footer-contact">
           <span>Phone (866) 393-5601</span>
-          <span>Fax (916) 652-5754</span>
+  
         </div>
         <a href="#" class="footer-website">www.ezfloinjection.com</a>
         <span class="footer-version">v26.1</span>
@@ -2153,8 +2180,8 @@ hr.divider {
       <div style="transform: scale(0.82); transform-origin: top left; width: 122%;">
         <div class="sys-product img-left" style="margin-bottom: 32px;">
           <div class="prod-info">
-            <h3 class="green-title-sm">EZ-FLO MAINLINE 17.5 GAL.</h3>
-            <p class="sku"><strong>SKU:</strong> EZ017-HC</p>
+            <h3 class="green-title-sm">EZ017-HC</h3>
+            <p class="prod-subtitle">EZ-FLO MAINLINE 17.5 GAL.</p>
             <table class="spec-table wide-label">
               <tr><td>Fill Capacity</td><td>Up to 17.5 GAL or 150 LBS</td></tr>
               <tr><td>Dimensions</td><td>36" x 15" x 22"</td></tr>
@@ -2173,8 +2200,8 @@ hr.divider {
 
         <div class="sys-product img-right" style="margin-bottom: 32px;">
           <div class="prod-info">
-            <h3 class="green-title-sm">EZ-FLO MAINLINE 25 GAL.</h3>
-            <p class="sku"><strong>SKU:</strong> EZ025-HC</p>
+            <h3 class="green-title-sm">EZ025-HC</h3>
+            <p class="prod-subtitle">EZ-FLO MAINLINE 25 GAL.</p>
             <table class="spec-table wide-label">
               <tr><td>Fill Capacity</td><td>Up to 23 GAL or 225 LBS</td></tr>
               <tr><td>Dimensions</td><td>36" x 19" x 23"</td></tr>
@@ -2187,27 +2214,22 @@ hr.divider {
             </table>
           </div>
           <div class="prod-img">
-            <img src="../mockup/Photoroom (14)/EZ-FLO-High-Capacity-23-Gallon-Photoroom-Photoroom-Photoroom.png" alt="EZ-FLO Mainline 25 GAL">
+            <img src="../mockup/Photoroom (14)/EZ025-HC-Photoroom.png" alt="EZ-FLO Mainline 25 GAL">
           </div>
         </div>
 
-        <div class="sys-product img-left" style="margin-bottom: 32px;">
+        <div class="sys-product img-left" style="margin-top: 12px;">
           <div class="prod-info">
-            <h3 class="green-title-sm">EZ-FLO MAINLINE 75 GAL.</h3>
-            <p class="sku"><strong>SKU:</strong> EZ075-HC</p>
+            <h3 class="green-title-sm">HF-ENC</h3>
+            <p class="prod-subtitle">EZ-FLO ENG STEEL ENCL.</p>
             <table class="spec-table wide-label">
-              <tr><td>Fill Capacity</td><td>Up to 75 GAL or 800 LBS</td></tr>
-              <tr><td>Dimensions</td><td>28" x 28" x 72"</td></tr>
-              <tr><td>Valve Box Size</td><td>40" x 40" x 80"</td></tr>
-              <tr><td>Coverage</td><td>800,000 SQ. FT.</td></tr>
-              <tr><td>Flow Range</td><td>25 GPH - 8000 GPM</td></tr>
-              <tr><td>Pressure Range</td><td>5 PSI - 125 PSI</td></tr>
-              <tr><td>Pressure Relief Valve</td><td>135 PSI</td></tr>
-              <tr><td>Connection</td><td>SOLD SEPARATELY</td></tr>
+              <tr><td>Model</td><td>EZ-FLO ENG 86 GAL.</td></tr>
+              <tr><td>Dimensions</td><td>40" x 40" x 80"</td></tr>
+              <tr><td>Weight</td><td>350 LBS</td></tr>
             </table>
           </div>
           <div class="prod-img">
-            <img src="../mockup/Photoroom (14)/EZ-FLO-High-Capacity-23-Gallon-Photoroom-Photoroom-Photoroom.png" alt="EZ-FLO Mainline 75 GAL">
+            <img src="../mockup/Photoroom (14)/HF-ENC.png" alt="EZ-FLO ENG Steel Enclosure" style="width: 260px; height: 260px;">
           </div>
         </div>
       </div>
@@ -2221,7 +2243,7 @@ hr.divider {
       <div class="footer-right">
         <div class="footer-contact">
           <span>Phone (866) 393-5601</span>
-          <span>Fax (916) 652-5754</span>
+  
         </div>
         <a href="#" class="footer-website">www.ezfloinjection.com</a>
         <span class="footer-version">v26.1</span>
@@ -2268,35 +2290,20 @@ hr.divider {
             <th></th>
             <th>EZ-FLO 17.5 GAL.<br><span style="font-weight: 400; display: inline-block; margin-top: 4px;">SKU: EZ017-HC</span></th>
             <th>EZ-FLO 25 GAL.<br><span style="font-weight: 400; display: inline-block; margin-top: 4px;">SKU: EZ025-HC</span></th>
-            <th>EZ-FLO 75 GAL.<br><span style="font-weight: 400; display: inline-block; margin-top: 4px;">SKU: EZ075-HC</span></th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>Fill Capacity</td><td>17.5 GAL / 150 LBS</td><td>23 GAL / 225 LBS</td><td>75 GAL / 800 LBS</td></tr>
-          <tr><td>Dimensions</td><td>36" x 15" x 22"</td><td>36" x 19" x 23"</td><td>28" x 28" x 72"</td></tr>
-          <tr><td>Valve Box Size</td><td>36" x 24" x 24"</td><td>36" x 24" x 24"</td><td>40" x 40" x 80"</td></tr>
-          <tr><td>Coverage</td><td>150,000 SQ. FT.</td><td>225,000 SQ. FT.</td><td>800,000 SQ. FT.</td></tr>
-          <tr><td>Flow Range</td><td>2.5 GPH - 2000 GPM</td><td>2.5 GPH - 2000 GPM</td><td>25 GPH - 8000 GPM</td></tr>
-          <tr><td>Pressure Range</td><td>5 PSI - 80 PSI</td><td>5 PSI - 80 PSI</td><td>5 PSI - 125 PSI</td></tr>
-          <tr><td>Pressure Relief Valve</td><td>135 PSI</td><td>135 PSI</td><td>135 PSI</td></tr>
-          <tr><td>Connection</td><td>SOLD SEPARATELY</td><td>SOLD SEPARATELY</td><td>SOLD SEPARATELY</td></tr>
+          <tr><td>Fill Capacity</td><td>17.5 GAL / 150 LBS</td><td>23 GAL / 225 LBS</td></tr>
+          <tr><td>Dimensions</td><td>36" x 15" x 22"</td><td>36" x 19" x 23"</td></tr>
+          <tr><td>Valve Box Size</td><td>36" x 24" x 24"</td><td>36" x 24" x 24"</td></tr>
+          <tr><td>Coverage</td><td>150,000 SQ. FT.</td><td>225,000 SQ. FT.</td></tr>
+          <tr><td>Flow Range</td><td>2.5 GPH - 2000 GPM</td><td>2.5 GPH - 2000 GPM</td></tr>
+          <tr><td>Pressure Range</td><td>5 PSI - 80 PSI</td><td>5 PSI - 80 PSI</td></tr>
+          <tr><td>Pressure Relief Valve</td><td>135 PSI</td><td>135 PSI</td></tr>
+          <tr><td>Connection</td><td>SOLD SEPARATELY</td><td>SOLD SEPARATELY</td></tr>
         </tbody>
       </table>
 
-      <div class="sys-product img-right" style="margin-top: 20px;">
-        <div class="prod-info">
-          <h3 class="green-title-sm">EZ-FLO ENG STEEL ENCL.</h3>
-          <p class="sku"><strong>SKU:</strong> HF-ENC</p>
-          <table class="spec-table wide-label">
-            <tr><td>Model</td><td>EZ-FLO ENG 86 GAL.</td></tr>
-            <tr><td>Dimensions</td><td>40" x 40" x 80"</td></tr>
-            <tr><td>Weight</td><td>350 LBS</td></tr>
-          </table>
-        </div>
-        <div class="prod-img">
-          <img src="../mockup/Photoroom (14)/HF-ENC.png" alt="EZ-FLO ENG Steel Enclosure" style="width: 260px; height: 260px;">
-        </div>
-      </div>
       </div>
 
     </div>
@@ -2309,7 +2316,7 @@ hr.divider {
       <div class="footer-right">
         <div class="footer-contact">
           <span>Phone (866) 393-5601</span>
-          <span>Fax (916) 652-5754</span>
+  
         </div>
         <a href="#" class="footer-website">www.ezfloinjection.com</a>
         <span class="footer-version">v26.1</span>
@@ -2348,8 +2355,8 @@ hr.divider {
           <img src="../mockup/Photoroom (14)/Hose-bib-connector-3060-Photoroom-Photoroom-Photoroom.png" alt="Hose Thread Connectors">
         </div>
         <div class="prod-info">
-          <h3 class="green-title-sm">EZ-FLO - HOSE THREAD CONNECTORS</h3>
-          <p class="sku"><strong>SKU:</strong> 3060 / 3060CG</p>
+          <h3 class="green-title-sm">3060 / 3060CG</h3>
+          <p class="prod-subtitle">EZ-FLO - HOSE THREAD CONNECTORS</p>
           <p>For Garden Hose Thread (GHT) connection.</p>
           <ul class="feature-list">
             <li>Fits all 3/4" GHT connections</li>
@@ -2366,8 +2373,8 @@ hr.divider {
           <img src="../mockup/Photoroom (14)/EZ-FLO - Coupling Connections w Ball Valve-Photoroom-Photoroom-Photoroom.png" alt="Coupling Ball Valve">
         </div>
         <div class="prod-info">
-          <h3 class="green-title-sm">EZ-FLO - COUPLING BALL VALVE</h3>
-          <p class="sku"><strong>SKU:</strong> CBV-100 to CBV-400</p>
+          <h3 class="green-title-sm">CBV-100 to CBV-400</h3>
+          <p class="prod-subtitle">EZ-FLO - COUPLING BALL VALVE</p>
           <p>For standard main line connection.</p>
           <ul class="feature-list">
             <li>Manufactured from SCH 40 PVC</li>
@@ -2382,13 +2389,13 @@ hr.divider {
 
     <div class="footer">
       <div class="footer-left">
-        <div class="footer-page">15</div>
+        <div class="footer-page">16</div>
         <span class="footer-info">EZ-FLO Injection Systems</span>
       </div>
       <div class="footer-right">
         <div class="footer-contact">
           <span>Phone (866) 393-5601</span>
-          <span>Fax (916) 652-5754</span>
+  
         </div>
         <a href="#" class="footer-website">www.ezfloinjection.com</a>
         <span class="footer-version">v26.1</span>
@@ -2413,8 +2420,8 @@ hr.divider {
           <img src="../mockup/Photoroom (14)/SADDLE-KIT-Photoroom-Photoroom-Photoroom.png" alt="Saddle Connections">
         </div>
         <div class="prod-info">
-          <h3 class="green-title-sm">EZ-FLO - SADDLE CONNECTIONS</h3>
-          <p class="sku"><strong>SKU:</strong> SADDLES</p>
+          <h3 class="green-title-sm">SADDLES</h3>
+          <p class="prod-subtitle">EZ-FLO - SADDLE CONNECTIONS</p>
           <p>Install on opposing sides of a valve.</p>
           <ul class="feature-list">
             <li>Installed through two 1-1/4" drilled holes</li>
@@ -2431,8 +2438,8 @@ hr.divider {
           <img src="../mockup/Photoroom (14)/engpool-Photoroom.png" alt="Engineered Spool Connections">
         </div>
         <div class="prod-info">
-          <h3 class="green-title-sm">EZ-FLO - ENGINEERED SPOOL CONNECTIONS</h3>
-          <p class="sku"><strong>SKU:</strong> C-SPOOL</p>
+          <h3 class="green-title-sm">C-SPOOL</h3>
+          <p class="prod-subtitle">EZ-FLO - ENGINEERED SPOOL CONNECTIONS</p>
           <p>For any pipe size or application</p>
           <ul class="feature-list">
             <li>Stocked in 4" – 8" with flanged ends &amp; galvanized coating</li>
@@ -2450,8 +2457,8 @@ hr.divider {
           <img src="../mockup/Photoroom (14)/EZ-FLO-FunnelView4-scaled-Photoroom-Photoroom-Photoroom.png" alt="Funnel">
         </div>
         <div class="prod-info">
-          <h3 class="green-title-sm">EZ-FLO - FUNNEL</h3>
-          <p class="sku"><strong>SKU:</strong> EZ-FUNNEL</p>
+          <h3 class="green-title-sm">EZ-FUNNEL</h3>
+          <p class="prod-subtitle">EZ-FLO - FUNNEL</p>
           <ul class="feature-list">
             <li>EZ-FNLSC for smaller systems, large opening for easy powder flow, works with multiple models</li>
             <li>EZ-FNLHC for larger capacity systems, fast filling, minimizes product waste, works with specific models</li>
@@ -2464,13 +2471,13 @@ hr.divider {
 
     <div class="footer">
       <div class="footer-left">
-        <div class="footer-page">16</div>
+        <div class="footer-page">17</div>
         <span class="footer-info">EZ-FLO Injection Systems</span>
       </div>
       <div class="footer-right">
         <div class="footer-contact">
           <span>Phone (866) 393-5601</span>
-          <span>Fax (916) 652-5754</span>
+  
         </div>
         <a href="#" class="footer-website">www.ezfloinjection.com</a>
         <span class="footer-version">v26.1</span>
@@ -2480,7 +2487,7 @@ hr.divider {
   </div>
 
 <div class="page">
-  <img class="page-leaf page-leaf-1" src="../mockup/leaf 2.png" alt="">
+  <img class="page-leaf page-leaf-1" src="../mockup/leaf 2.png" alt="" style="bottom: 20px;">
   <img class="page-leaf page-leaf-2" src="../mockup/leaf 1.png" alt="">
   <div class="header">
     <div class="header-section-label">FERTILIZERS &<br><span>Supplements</span></div>
@@ -2491,7 +2498,7 @@ hr.divider {
 
     <h2 class="section-title">PREMIUM FILL KIT (PFK)</h2>
 
-    <p>The EZ-FLO PFK Series - the ultimate solution for all your mixing and dosing needs! With PFK-1, PFK-2, and PFK-3, you'll never have to guess which product to use or how much to add.</p>
+    <p>The EZ-FLO PFK Series - the ultimate solution for all your mixing and dosing needs! With PFK-1, you'll never have to guess which product to use or how much to add.</p>
     <ul class="feature-list">
       <li>Three products for different needs</li>
       <li>Simple to use no guessing required</li>
@@ -2502,19 +2509,19 @@ hr.divider {
     <p><strong>Instructions:</strong> Simply combine all of the ingredients into the pail, add water to the fill line to make the solution pourable, and fill your EZ-FLO system. No additional measuring or calculations required.</p>
 
     <div class="step-cards" style="gap: 20px;">
-      <div class="step-card" style="flex: 1;">
+      <div class="step-card" style="flex: 1; background: #25b08a;">
         <div class="step-num">1</div>
         <div class="step-img" style="aspect-ratio: 5/4; background: transparent;"><img src="../mockup/untitled folder/SVG/Artboard 3_1.svg" alt="Open Pail"></div>
         <div class="step-label" style="color: #fff;">Open Pail</div>
       </div>
-      <div class="step-card" style="flex: 1;">
+      <div class="step-card" style="flex: 1; background: #25b08a;">
         <div class="step-num">2</div>
-        <div class="step-img" style="aspect-ratio: 5/4; background: transparent;"><img src="../mockup/untitled folder/SVG/Artboard 4_1.svg" alt="Make Solution"></div>
+        <div class="step-img" style="aspect-ratio: 5/4; background: transparent;"><img src="../mockup/Photoroom (14)/2nd.png" alt="Make Solution"></div>
         <div class="step-label" style="color: #fff;">Make Solution</div>
       </div>
-      <div class="step-card" style="flex: 1;">
+      <div class="step-card" style="flex: 1; background: #25b08a;">
         <div class="step-num">3</div>
-        <div class="step-img" style="aspect-ratio: 5/4; background: transparent;"><img src="../mockup/untitled folder/SVG/Artboard 5_1.svg" alt="Pour Solution"></div>
+        <div class="step-img" style="aspect-ratio: 5/4; background: transparent;"><img src="../mockup/Photoroom (14)/3rd.png" alt="Pour Solution"></div>
         <div class="step-label" style="color: #fff;">Pour Solution</div>
       </div>
     </div>
@@ -2524,8 +2531,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/premium-fill-kit-ez-flo-6-Photoroom-Photoroom-Photoroom.png" alt="FERTI-MAXX ALL PURPOSE">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">FERTI-MAXX ALL PURPOSE</h3>
-        <div class="sku"><strong>SKU:</strong> PFK-1</div>
+        <h3 class="green-title-sm">PFK-1</h3>
+        <p class="prod-subtitle">FERTI-MAXX ALL PURPOSE</p>
         <ul>
           <li>8 pounds of Ferti-Maxx Landscape Fertilizer - health and growth</li>
           <li>8 ounces of Hydro-Maxx Wetting Agent - water and nutrient enhancement</li>
@@ -2545,7 +2552,7 @@ hr.divider {
     <div class="footer-right">
       <div class="footer-contact">
         <span>Phone (866) 393-5601</span>
-        <span>Fax (916) 652-5754</span>
+
       </div>
       <a href="#" class="footer-website">www.ezfloinjection.com</a>
       <span class="footer-version">v26.1</span>
@@ -2572,8 +2579,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/Eco-Maxx_Label_2.5-gal-scaled-1-scaled-Photoroom-Photoroom-Photoroom.png" alt="FERTI-ECO MAXX">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">FERTI-ECO MAXX (3-2-2)</h3>
-        <div class="sku"><strong>SKU:</strong> ECO MAXX - 2.5</div>
+        <h3 class="green-title-sm">ECO-MAXX</h3>
+        <p class="prod-subtitle">FERTI-ECO MAXX (3-2-2)</p>
         <p>Provides NPK, humic acid, fulvic acid, and molasses, in addition to Endo &amp; Ecto Mycorrhizae.</p>
         <ul>
           <li>With Endo &amp; Ecto Mycorrhizae fostering beneficial microbial interactions</li>
@@ -2590,8 +2597,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/Maxx-C_Label_2-scaled-Photoroom-Photoroom-Photoroom.png" alt="FERTI-MAXX COMPLETE">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">FERTI-MAXX COMPLETE (18-3-4)</h3>
-        <div class="sku"><strong>SKU:</strong> MAXX-C - 2.5</div>
+        <h3 class="green-title-sm">MAXX-C</h3>
+        <p class="prod-subtitle">FERTI-MAXX COMPLETE (18-3-4)</p>
         <p>Provides synthetic NPK, carbon, fulvic acid, and iron for fast growth and color enhancement.</p>
         <ul>
           <li>Enriched with carbon, fulvic acid, and iron for rapid growth</li>
@@ -2613,7 +2620,7 @@ hr.divider {
     <div class="footer-right">
       <div class="footer-contact">
         <span>Phone (866) 393-5601</span>
-        <span>Fax (916) 652-5754</span>
+
       </div>
       <a href="#" class="footer-website">www.ezfloinjection.com</a>
       <span class="footer-version">v26.1</span>
@@ -2636,14 +2643,14 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/FERTI MAXX - Sugar - Organic Sugar Blend-Photoroom-Photoroom-Photoroom.png" alt="FERTI-MAXX SUGAR">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">FERTI-MAXX SUGAR (3-1-2)</h3>
-        <div class="sku"><strong>SKU:</strong> FM SUGAR - 2.5</div>
+        <h3 class="green-title-sm">FM-SUGAR-25</h3>
+        <p class="prod-subtitle">FERTI-MAXX SUGAR (3-1-2)</p>
         <p>Organic based and designed as low growth product for landscape health development and retention.</p>
         <ul>
           <li>High sugar content for quick microbial development</li>
           <li>Promotes healthy soil biology and root growth; effective in cool, warm and hot weather</li>
         </ul>
-        <div class="coverage-rate"><strong>Coverage Rate:</strong> 25,000 sq ft per bag or gallon per month</div>
+        <div class="coverage-rate"><strong>Coverage Rate:</strong> 25,000 sq ft per gallon per month</div>
         <a href="#" class="green-link">VISIT WEBSITE FOR INGREDIENT LIST</a>
       </div>
     </div>
@@ -2653,8 +2660,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/FERTI MAXX - Landscape Growth Blend-Photoroom-Photoroom-Photoroom.png" alt="FERTI-MAXX LANDSCAPE">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">FERTI-MAXX LANDSCAPE (23-13-8)</h3>
-        <div class="sku"><strong>SKU:</strong> FM LANDSCAPE - 25</div>
+        <h3 class="green-title-sm">FM LANDSCAPE - 25</h3>
+        <p class="prod-subtitle">FERTI-MAXX LANDSCAPE (23-13-8)</p>
         <p>Designed as a high growth product for rapid landscape maturation and development.</p>
         <ul>
           <li>Boosted with Maxx-Products proprietary organic blend</li>
@@ -2670,8 +2677,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/FERTI MAXX - Turf & Sports Field Blend-Photoroom-Photoroom-Photoroom.png" alt="FERTI-MAXX TURF">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">FERTI-MAXX TURF (26-6-16)</h3>
-        <div class="sku"><strong>SKU:</strong> FM TURF - 25</div>
+        <h3 class="green-title-sm">FM TURF - 25</h3>
+        <p class="prod-subtitle">FERTI-MAXX TURF (26-6-16)</p>
         <p>Designed as a high growth product for rapid turf recovery and repair.</p>
         <ul>
           <li>Boosted with Maxx-Products proprietary organic blend</li>
@@ -2692,7 +2699,7 @@ hr.divider {
     <div class="footer-right">
       <div class="footer-contact">
         <span>Phone (866) 393-5601</span>
-        <span>Fax (916) 652-5754</span>
+
       </div>
       <a href="#" class="footer-website">www.ezfloinjection.com</a>
       <span class="footer-version">v26.1</span>
@@ -2715,8 +2722,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/FERTI MAXX - Starter & Transplant Blend-Photoroom-Photoroom-Photoroom.png" alt="FERTI-MAXX STARTER" >
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">FERTI-MAXX STARTER (8-18-28)</h3>
-        <div class="sku"><strong>SKU:</strong> FM STARTER - 25</div>
+        <h3 class="green-title-sm">FM STARTER - 25</h3>
+        <p class="prod-subtitle">FERTI-MAXX STARTER (8-18-28)</p>
         <p>Designed as a transplant and winterizing blend to protect your landscape investment.</p>
         <ul>
           <li>Boosted with Maxx-Products proprietary organic blend</li>
@@ -2732,8 +2739,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/FERTI MAXX - Cool Weather Blend-Photoroom-Photoroom-Photoroom.png" alt="FERTI-MAXX COOL" >
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">FERTI-MAXX COOL (18-8-18)</h3>
-        <div class="sku"><strong>SKU:</strong> FM COOL - 25</div>
+        <h3 class="green-title-sm">FM COOL - 25</h3>
+        <p class="prod-subtitle">FERTI-MAXX COOL (18-8-18)</p>
         <p>High nitrate blend for fast establishment of turf grasses in cool weather.</p>
         <ul>
           <li>Boosted with Maxx-Products proprietary organic blend</li>
@@ -2749,8 +2756,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/Ferti-Maxx-Triple-18-1-1-scaled-Photoroom-Photoroom-Photoroom.png" alt="FERTI-MAXX TRIPLE 18" >
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">FERTI-MAXX TRIPLE 18 (18-18-18)</h3>
-        <div class="sku"><strong>SKU:</strong> FM TRIPLE 18 - 25</div>
+        <h3 class="green-title-sm">FM TRIPLE 18 - 25</h3>
+        <p class="prod-subtitle">FERTI-MAXX TRIPLE 18 (18-18-18)</p>
         <p>Universal blend for all types of landscapes and gardens.</p>
         <ul>
           <li>Boosted with Maxx-Products proprietary organic blend</li>
@@ -2771,7 +2778,7 @@ hr.divider {
     <div class="footer-right">
       <div class="footer-contact">
         <span>Phone (866) 393-5601</span>
-        <span>Fax (916) 652-5754</span>
+
       </div>
       <a href="#" class="footer-website">www.ezfloinjection.com</a>
       <span class="footer-version">v26.1</span>
@@ -2804,8 +2811,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/IRON MAXX - 5% Non-Staining Iron Supplement-Photoroom-Photoroom-Photoroom.png" alt="Iron-Maxx">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">Iron-Maxx (6-0-0)</h3>
-        <div class="sku"><strong>SKU:</strong> IRON MAXX - 1</div>
+        <h3 class="green-title-sm">IRON MAXX - 1</h3>
+        <p class="prod-subtitle">Iron-Maxx (6-0-0)</p>
         <p>Designed to provide dark green color without added growth.</p>
         <ul class="feature-list">
           <li>5% Chelated non-staining iron supplement</li>
@@ -2823,8 +2830,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/COLOR MAXX - Color Enhancement-Photoroom-Photoroom-Photoroom.png" alt="Color-Maxx">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">Color-Maxx (6-0-0)</h3>
-        <div class="sku"><strong>SKU:</strong> COLOR MAXX - 1</div>
+        <h3 class="green-title-sm">COLOR MAXX - 1</h3>
+        <p class="prod-subtitle">Color-Maxx (6-0-0)</p>
         <p>Color enhancement from the inside out anytime of year.</p>
         <ul class="feature-list">
           <li>Promotes color, activates greening and stabilizes growth</li>
@@ -2845,7 +2852,7 @@ hr.divider {
     <div class="footer-right">
       <div class="footer-contact">
         <span>Phone (866) 393-5601</span>
-        <span>Fax (916) 652-5754</span>
+
       </div>
       <a href="#" class="footer-website">www.ezfloinjection.com</a>
       <span class="footer-version">v26.1</span>
@@ -2879,15 +2886,15 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/HYDRO MAXX - Boosted w Complexing Carbon, Surfactant & Penetrant-Photoroom-Photoroom-Photoroom.png" alt="Hydro-Maxx">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">Hydro-Maxx</h3>
-        <div class="sku"><strong>SKU:</strong> HYDRO MAXX - 1</div>
+        <h3 class="green-title-sm">HYDRO MAXX - 1</h3>
+        <p class="prod-subtitle">Hydro-Maxx</p>
         <p>Wetting agent that can mix with all FERTI-MAXX products and/or fertilizer blends.</p>
         <ul class="feature-list">
           <li>Reduces water usage up to 30% with consistent moisture penetration</li>
           <li>Frees calcium allowing nutrients to penetrate the full soil profile</li>
           <li>Reduces nutrient and chemical requirements; maintains clean drip emitters</li>
         </ul>
-        <div class="coverage-rate"><strong>Coverage Rate:</strong> 160,000 sqft.</div>
+        <div class="coverage-rate"><strong>Coverage Rate:</strong> 160,000 sqft. per gallon</div>
         <a href="#" class="green-link">VISIT WEBSITE FOR INGREDIENT LIST</a>
       </div>
     </div>
@@ -2898,8 +2905,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/HYDRO CLEANSE - Organic Emitter Cleaner, pH Reduction & Hard Water Treatment-Photoroom-Photoroom-Photoroom.png" alt="Hydro-Cleanse">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">Hydro-Cleanse</h3>
-        <div class="sku"><strong>SKU:</strong> HYDRO CLEANSE - 1</div>
+        <h3 class="green-title-sm">HYDRO CLEANSE - 1</h3>
+        <p class="prod-subtitle">Hydro-Cleanse</p>
         <p>Organic acid complex that frees nutrients, cleans drip emitters, opens up plugged systems, and keeps drip systems clean.</p>
         <ul class="feature-list">
           <li>Reduces pH, loosens clay soils, buffers hard water</li>
@@ -2921,7 +2928,7 @@ hr.divider {
     <div class="footer-right">
       <div class="footer-contact">
         <span>Phone (866) 393-5601</span>
-        <span>Fax (916) 652-5754</span>
+
       </div>
       <a href="#" class="footer-website">www.ezfloinjection.com</a>
       <span class="footer-version">v26.1</span>
@@ -2946,8 +2953,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/CRITTER MAXX - Critter Repellent (Moles Voles, Gophers and More)-Photoroom-Photoroom-Photoroom.png" alt="Critter-Maxx">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">CRITTER-MAXX - CRITTER REPELLENT</h3>
-        <div class="sku"><strong>SKU:</strong> CRITTER-MAXX</div>
+        <h3 class="green-title-sm">CRITTER-MAXX</h3>
+        <p class="prod-subtitle">CRITTER-MAXX - CRITTER REPELLENT</p>
         <p>Effective against burrowing pests like moles, voles, and gophers.</p>
         <ul>
           <li>A natural and safe solution; no foul odor, won't harm animals or landscapes</li>
@@ -2964,8 +2971,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/MAXX-INSECT-1229x1536-Photoroom-Photoroom-Photoroom.png" alt="Maxx-Insect">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">MAXX-INSECT - INSECT &amp; RABBIT REPELLENT</h3>
-        <div class="sku"><strong>SKU:</strong> MAXX-INSECT</div>
+        <h3 class="green-title-sm">MAXX-INSECT</h3>
+        <p class="prod-subtitle">MAXX-INSECT - INSECT &amp; RABBIT REPELLENT</p>
         <p>Broad spectrum insect repellent formulated to repel the most common pests.</p>
         <ul>
           <li>Use for mosquitoes, fleas, ticks, rabbits, and many more</li>
@@ -2982,8 +2989,8 @@ hr.divider {
         <img src="../mockup/Photoroom (14)/MAXX_fresh-Label-Photoroom-Photoroom-Photoroom.png" alt="Maxx-Fresh">
       </div>
       <div class="prod-info">
-        <h3 class="green-title-sm">MAXX-FRESH - ODOR ELIMINATOR</h3>
-        <div class="sku"><strong>SKU:</strong> MAXX-FRESH - 1</div>
+        <h3 class="green-title-sm">MAXX-FRESH - 1</h3>
+        <p class="prod-subtitle">MAXX-FRESH - ODOR ELIMINATOR</p>
         <p>All-natural, organic yard deodorizer that controls odors from standing water, animal feces, and urine.</p>
         <ul>
           <li>Non-toxic, organic and safe; biodegrades odors, not a masking agent</li>
@@ -3004,7 +3011,7 @@ hr.divider {
     <div class="footer-right">
       <div class="footer-contact">
         <span>Phone (866) 393-5601</span>
-        <span>Fax (916) 652-5754</span>
+
       </div>
       <a href="#" class="footer-website">www.ezfloinjection.com</a>
       <span class="footer-version">v26.1</span>
@@ -3064,7 +3071,6 @@ hr.divider {
         <tr><td>Critter-Maxx - Critter Repellent</td><td>1 GAL</td><td>14 OZ</td></tr>
         <tr><td>Maxx-Insect - Insect & Rabbit Repellent</td><td>4 OZ</td><td>14 OZ</td></tr>
         <tr><td>Maxx-Fresh - Odor Eliminator</td><td>4 OZ</td><td>10 OZ</td></tr>
-        <tr><td>Maxx Safety - Insect & Rabbit Repellent</td><td>6.5 GAL</td><td>48 OZ</td></tr>
       </tbody>
     </table>
 
@@ -3079,7 +3085,7 @@ hr.divider {
     <div class="footer-right">
       <div class="footer-contact">
         <span>Phone (866) 393-5601</span>
-        <span>Fax (916) 652-5754</span>
+
       </div>
       <a href="#" class="footer-website">www.ezfloinjection.com</a>
       <span class="footer-version">v26.1</span>

@@ -666,12 +666,35 @@ hr.divider {
 /* ============================================================
    FERTILIZER TEXT STYLES (inside .prod-info)
    ============================================================ */
-.fert-product .prod-info p {
+.fert-product .prod-info p:not(.prod-subtitle) {
   font-size: 14px;
   font-weight: 400;
   color: #444;
   line-height: 1.55;
   margin-bottom: 6px;
+}
+
+.prod-subtitle,
+.fert-product .prod-info .prod-subtitle,
+.compact-text .prod-subtitle {
+  font-size: 12px !important;
+  color: #666 !important;
+  font-weight: 400 !important;
+  margin-top: 2px !important;
+  margin-bottom: 4px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.green-title-sm,
+.fert-product .prod-info .green-title-sm,
+.compact-text .green-title-sm {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #1A9978 !important;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 0 !important;
 }
 
 .fert-product .prod-info .sku {
