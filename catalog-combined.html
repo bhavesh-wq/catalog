@@ -1059,6 +1059,7 @@ hr.divider {
   font-weight: 400;
   color: #444;
   border-bottom: 1px solid #eee;
+  white-space: nowrap;
 }
 
 .sizing-table tr:nth-child(even) {
@@ -1413,7 +1414,7 @@ hr.divider {
     <div class="toc-section-title">II. Injection Systems</div>
     <div class="toc-item"><span>System Sizing</span><span>07</span></div>
     <div class="toc-item"><span>Garden Hose Bib Systems</span><span>08</span></div>
-    <div class="toc-item"><span>Mainline Systems (EZ-Kit)</span><span>10</span></div>
+    <div class="toc-item"><span>Mainline Systems</span><span>10</span></div>
     <div class="toc-item"><span>High Capacity Systems</span><span>12</span></div>
 
     <div class="toc-section-title">III. Parts &amp; Accessories</div>
@@ -1680,8 +1681,8 @@ hr.divider {
             <th>CAPACITY (GALLONS)</th>
             <th>CAPACITY (POUNDS)</th>
             <th>SQUARE FEET</th>
-            <th>UNIT SIZE (L x W x H)</th>
-            <th>VALVE BOX SIZE (L x W x H)</th>
+            <th style="white-space: nowrap;">UNIT SIZE<br>(L x W x H)</th>
+            <th style="white-space: nowrap;">VALVE BOX SIZE<br>(L x W x H)</th>
           </tr>
         </thead>
         <tbody>
@@ -1691,7 +1692,7 @@ hr.divider {
             <td>7.5</td>
             <td>15,000</td>
             <td>15" x 8" x 11"</td>
-            <td>19" x 8.5" x 11"</td>
+            <td>24" x 13" x 12"</td>
           </tr>
           <tr>
             <td>EZKIT-1</td>
@@ -1867,23 +1868,8 @@ hr.divider {
 
       <div class="sys-product img-right">
         <div class="prod-img">
-          <img src="../mockup/Photoroom (14)/EZ-FLO_1010-HB_flow_front_Square_V1-Photoroom-Photoroom-Photoroom.png" alt="EZ-FLO Hose Bib 1 GAL" style="width: 260px; height: 260px;">
+          <img src="../mockup/Photoroom (14)/EZ 2020-HB.png" alt="EZ-FLO Hose Bib 2.5 GAL" style="width: 260px; height: 260px;">
         </div>
-        <div class="prod-info">
-          <h3 class="green-title-sm">EZ 1010-HB</h3>
-          <p class="prod-subtitle">EZ-FLO HOSE BIB .75 GAL.</p>
-          <table class="spec-table">
-            <tr><td>Fill Capacity</td><td>Up to .75 GAL or 7.5 LBS</td></tr>
-            <tr><td>Dimensions</td><td>7" x 7" x 15"</td></tr>
-            <tr><td>Coverage</td><td>16,000 SQ. FT.</td></tr>
-            <tr><td>Flow Range</td><td>2.5 GPH - 35 GPM</td></tr>
-            <tr><td>Pressure Range</td><td>5 PSI - 80 PSI</td></tr>
-            <tr><td>Connection</td><td>3/4" BRASS INCLUDED</td></tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="sys-product img-right">
         <div class="prod-info">
           <h3 class="green-title-sm">EZ 2020-HB</h3>
           <p class="prod-subtitle">EZ-FLO HOSE BIB 2.5 GAL.</p>
@@ -1896,8 +1882,23 @@ hr.divider {
             <tr><td>Connection</td><td>3/4" PVC INCLUDED</td></tr>
           </table>
         </div>
+      </div>
+
+      <div class="sys-product img-right">
+        <div class="prod-info">
+          <h3 class="green-title-sm">EZ 1010-HB</h3>
+          <p class="prod-subtitle">EZ-FLO HOSE BIB .75 GAL.</p>
+          <table class="spec-table">
+            <tr><td>Fill Capacity</td><td>Up to .75 GAL or 7.5 LBS</td></tr>
+            <tr><td>Dimensions</td><td>7" x 7" x 15"</td></tr>
+            <tr><td>Coverage</td><td>16,000 SQ. FT.</td></tr>
+            <tr><td>Flow Range</td><td>2.5 GPH - 35 GPM</td></tr>
+            <tr><td>Pressure Range</td><td>5 PSI - 80 PSI</td></tr>
+            <tr><td>Connection</td><td>3/4" BRASS INCLUDED</td></tr>
+          </table>
+        </div>
         <div class="prod-img">
-          <img src="../mockup/Photoroom (14)/EZ 2020-HB.png" alt="EZ-FLO Hose Bib 2.5 GAL" style="width: 260px; height: 260px;">
+          <img src="../mockup/Photoroom (14)/EZ-FLO_1010-HB_flow_front_Square_V1-Photoroom-Photoroom-Photoroom.png" alt="EZ-FLO Hose Bib 1 GAL" style="width: 260px; height: 260px;">
         </div>
       </div>
 
@@ -1951,7 +1952,7 @@ hr.divider {
 
     <div class="content">
       <h1 class="section-title">EZ-FLO MAINLINE SYSTEMS</h1>
-      <div class="green-title" style="font-size: 22px; margin-top: 0; margin-bottom: 12px;">(EZ-Kit Systems)</div>
+
 
       <p>EZ-FLO Mainline Injection Systems offer distinct advantages for landscape application. Utilizing proprietary fill system, these systems provide double the water soluble product capacity. Compact package with integrated drain valve and separate fill port makes refilling faster and cleaner. Built for residential and commercial use alike.</p>
 
@@ -2044,27 +2045,6 @@ hr.divider {
         </div>
       </div>
 
-      <h3 class="green-title-sm diff-heading">KEY DIFFERENCES</h3>
-      <table class="diff-table" style="font-size: 13px;">
-        <thead>
-          <tr>
-            <th></th>
-            <th>EZKIT 1.75 GAL.<br><span style="font-weight: 400; display: inline-block; margin-top: 4px;">SKU: EZKIT-1</span></th>
-            <th>EZKIT 2.5 GAL.<br><span style="font-weight: 400; display: inline-block; margin-top: 4px;">SKU: EZKIT-3</span></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Fill Capacity</td><td>1.75 GAL / 17.5 LBS</td><td>2.5 GAL / 25 LBS</td></tr>
-          <tr><td>Dimensions</td><td>14" x 10" x 11"</td><td>22" x 10" x 11"</td></tr>
-          <tr><td>Valve Box Size</td><td>24" x 13" x 12"</td><td>30" x 18" x 17"</td></tr>
-          <tr><td>Coverage</td><td>17,500 SQ. FT.</td><td>25,000 SQ. FT.</td></tr>
-          <tr><td>Flow Range</td><td>2.5 GPH - 300 GPM</td><td>2.5 GPH - 300 GPM</td></tr>
-          <tr><td>Pressure Range</td><td>5 PSI - 80 PSI</td><td>5 PSI - 80 PSI</td></tr>
-          <tr><td>Pressure Relief Valve</td><td>N/A</td><td>N/A</td></tr>
-          <tr><td>Connection</td><td>CBV-100 INCLUDED</td><td>CBV-100 INCLUDED</td></tr>
-        </tbody>
-      </table>
-
       <div class="sys-product img-right" style="margin-top: 32px;">
         <div class="prod-info">
           <h3 class="green-title-sm">EZ FLO-1</h3>
@@ -2084,6 +2064,28 @@ hr.divider {
           <img src="../mockup/Photoroom (14)/EZ FLO-1.png" alt="EZ FLO-1 .75 GAL">
         </div>
       </div>
+
+      <h3 class="green-title-sm diff-heading">KEY DIFFERENCES</h3>
+      <table class="diff-table" style="font-size: 13px;">
+        <thead>
+          <tr>
+            <th></th>
+            <th>EZKIT 1.75 GAL.<br><span style="font-weight: 400; display: inline-block; margin-top: 4px;">SKU: EZKIT-1</span></th>
+            <th>EZKIT 2.5 GAL.<br><span style="font-weight: 400; display: inline-block; margin-top: 4px;">SKU: EZKIT-3</span></th>
+            <th>EZ FLO .75 GAL.<br><span style="font-weight: 400; display: inline-block; margin-top: 4px;">SKU: EZ FLO-1</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Fill Capacity</td><td>1.75 GAL / 17.5 LBS</td><td>2.5 GAL / 25 LBS</td><td>.75 GAL / 7.5 LBS</td></tr>
+          <tr><td>Dimensions</td><td>14" x 10" x 11"</td><td>22" x 10" x 11"</td><td>15" x 8" x 11"</td></tr>
+          <tr><td>Valve Box Size</td><td>24" x 13" x 12"</td><td>30" x 18" x 17"</td><td>19" x 8.5" x 11"</td></tr>
+          <tr><td>Coverage</td><td>17,500 SQ. FT.</td><td>25,000 SQ. FT.</td><td>15,000 SQ. FT.</td></tr>
+          <tr><td>Flow Range</td><td>2.5 GPH - 300 GPM</td><td>2.5 GPH - 300 GPM</td><td>2.5 GPH - 300 GPM</td></tr>
+          <tr><td>Pressure Range</td><td>5 PSI - 80 PSI</td><td>5 PSI - 80 PSI</td><td>5 PSI - 80 PSI</td></tr>
+          <tr><td>Pressure Relief Valve</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+          <tr><td>Connection</td><td>CBV-100 INCLUDED</td><td>CBV-100 INCLUDED</td><td>CBV-100 INCLUDED</td></tr>
+        </tbody>
+      </table>
 
       </div>
     </div>
